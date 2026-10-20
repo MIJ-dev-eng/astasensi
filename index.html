@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Generate a Free Fire sensitivity starting profile for your phone and play style. Free, fast, and easy to use.">
+  <title>AstqSensi — Free Fire Sensitivity Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="FireSensi home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span>ASTQ<span class="brand-accent">SENSI</span></span>
+    </a>
+    <span class="free-pill"><span class="status-dot"></span> 100% FREE TOOL</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR STARTING SETTINGS</p>
+      <h1>YOUR PHONE.<br><span>YOUR SENSI.</span></h1>
+      <p class="hero-copy">Build a Free Fire sensitivity profile around your device and the way you play. Generate it only when you're ready.</p>
+      <div class="hero-tags" aria-label="Features">
+        <span><span class="tag-check">✓</span> Device-aware</span>
+        <span><span class="tag-check">✓</span> Headshot focused</span>
+        <span><span class="tag-check">✓</span> No sign-up</span>
+      </div>
+    </section>
+
+    <section class="generator-card" aria-labelledby="generator-title">
+      <div class="card-heading">
+        <div>
+          <p class="section-kicker">SENSITIVITY BUILDER <span>01 / 02</span></p>
+          <h2 id="generator-title">Configure your setup</h2>
+          <p class="muted">Tell us what you're playing on.</p>
+        </div>
+        <div class="target-icon" aria-hidden="true">◎</div>
+      </div>
+
+      <form id="sensi-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="brand">Phone brand</label>
+            <select id="brand" name="brand" required>
+              <option value="">Choose brand</option>
+              <option>Infinix</option>
+              <option>Tecno</option>
+              <option>Xiaomi</option>
+              <option>Redmi</option>
+              <option>Samsung</option>
+              <option>Apple</option>
+              <option>itel</option>
+              <option>OPPO</option>
+              <option>vivo</option>
+              <option>realme</option>
+              <option>Huawei</option>
+              <option>OnePlus</option>
+              <option value="Other">Other brand</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="model">Phone model</label>
+            <input id="model" name="model" list="model-options" placeholder="e.g. Redmi A5" maxlength="60" required autocomplete="off">
+            <datalist id="model-options">
+              <option value="Redmi A5"></option>
+              <option value="Redmi Note 13"></option>
+              <option value="Redmi Note 14"></option>
+              <option value="Infinix Hot 40"></option>
+              <option value="Infinix Hot 50"></option>
+              <option value="Infinix Smart 8"></option>
+              <option value="Infinix Smart 9"></option>
+              <option value="Tecno Spark 20"></option>
+              <option value="Tecno Spark 30"></option>
+              <option value="Tecno Spark Go 1"></option>
+              <option value="Samsung Galaxy A15"></option>
+              <option value="Samsung Galaxy A05"></option>
+              <option value="iPhone 11"></option>
+              <option value="iPhone 13"></option>
+            </datalist>
+            <small>Type your exact model if it isn't listed.</small>
+          </div>
+          <div class="field">
+            <label for="performance">Device performance</label>
+            <select id="performance" name="performance" required>
+              <option value="auto">Estimate for me</option>
+              <option value="entry">Entry-level / occasional lag</option>
+              <option value="mid">Mid-range / mostly smooth</option>
+              <option value="high">High-end / very smooth</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="style">Main play style</label>
+            <select id="style" name="style" required>
+              <option value="drag">Drag headshots</option>
+              <option value="rush">Close-range / rush</option>
+              <option value="balanced">Balanced gameplay</option>
+              <option value="scope">Scoped / longer range</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="swipe">Your usual finger movement</label>
+            <div class="choice-row">
+              <label class="choice">
+                <input type="radio" name="swipe" value="short">
+                <span><strong>Short swipe</strong><small>Small, controlled movement</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="swipe" value="medium" checked>
+                <span><strong>Medium swipe</strong><small>Balanced movement</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="swipe" value="long">
+                <span><strong>Long swipe</strong><small>Fast upward drag</small></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <p class="privacy-note"><span aria-hidden="true">⌁</span> Your choices are processed in this browser. No account or API key is needed.</p>
+        <button class="generate-button" type="submit">
+          <span>GENERATE MY SENSITIVITY</span><span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+        <p id="form-error" class="form-error" role="alert" hidden></p>
+      </form>
+    </section>
+
+    <section id="results" class="results-card" aria-labelledby="results-title" hidden>
+      <div class="results-top">
+        <div>
+          <p class="section-kicker">YOUR STARTING PROFILE <span>02 / 02</span></p>
+          <h2 id="results-title">Your sensitivity is ready</h2>
+          <p id="profile-summary" class="muted"></p>
+        </div>
+        <span class="result-badge">GENERATED</span>
+      </div>
+      <div class="results-note">
+        <span class="note-icon">i</span>
+        <p>These are suggested starting values, not verified perfect settings for this exact phone. Test them in Training Mode and adjust to your touch response and game version.</p>
+      </div>
+      <div id="sensitivity-grid" class="sensitivity-grid"></div>
+      <div class="result-actions">
+        <button id="copy-button" class="secondary-button" type="button">▣ Copy settings</button>
+        <button id="regenerate-button" class="generate-button compact-button" type="button"><span>REGENERATE</span><span class="button-arrow">↻</span></button>
+      </div>
+      <div class="tips-panel">
+        <h3>Headshot tuning tips</h3>
+        <ul id="tips-list"></ul>
+      </div>
+      <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="how-section">
+      <p class="section-kicker">HOW IT WORKS</p>
+      <div class="how-grid">
+        <article><span class="step-number">01</span><h3>Choose your device</h3><p>Enter the brand and model you play on.</p></article>
+        <article><span class="step-number">02</span><h3>Set your style</h3><p>Choose how you drag and fight.</p></article>
+        <article><span class="step-number">03</span><h3>Test and tune</h3><p>Use the values as a baseline, then fine-tune in-game.</p></article>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <strong>Fair-play note</strong>
+      <p>This is an independent fan-made tool and is not affiliated with or endorsed by Garena. It does not access your game, change settings automatically, or guarantee headshots. Sensitivity scales and device performance can vary by game version and settings.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">F<span>+</span></span><span>ASTQ<span class="brand-accent">SENSI</span></span></a><span>Free tool · Made for practice</span></footer>
+</body>
+</html>
