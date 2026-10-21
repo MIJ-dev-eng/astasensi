@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Frequently asked questions about the AstqaSensi sensitivity generator.">
+  <title>FAQ | AstaSensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AstqaSensi home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span>ASTQA<span class="brand-accent">SENSI</span></span>
+    </a>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Generator</a>
+      <a href="about.html">About</a>
+      <a href="how-to-use.html">How to use</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+    <span class="free-pill"><span class="status-dot"></span> 100% FREE TOOL</span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main class="content-page">
+    <p class="page-kicker">ASTASENSI / PLAYER GUIDE</p>
+    <h1>Frequently asked questions</h1>
+<div class="faq-item"><h2>Is AstaSensi free?</h2><p>Yes. The sensitivity generator is free to use and does not require an account.</p></div>
+<div class="faq-item"><h2>Will these settings guarantee headshots?</h2><p>No. The values are starting suggestions, not guarantees. Your technique, HUD, frame rate, touch response, and game version affect your aim.</p></div>
+<div class="faq-item"><h2>Are all phone models tested?</h2><p>No. Some devices may have starter profiles, while other models use general rules to estimate values. We do not claim every model has been individually tested.</p></div>
+<div class="faq-item"><h2>Why isn't my exact phone listed?</h2><p>Type the full model name manually. The model suggestions do not limit which model you can enter.</p></div>
+<div class="faq-item"><h2>Does the tool change my game settings automatically?</h2><p>No. It only displays values for you to enter manually in the game. It does not connect to or modify Free Fire.</p></div>
+<div class="faq-item"><h2>Does AstaSensi collect my phone details?</h2><p>The current generator processes the choices in your browser and does not send them to an AstaSensi server. Hosting providers may still process standard technical logs; see the Privacy Policy.</p></div>
+<div class="faq-item"><h2>Can I copy my generated values?</h2><p>Yes. Use the Copy settings button after generating your profile. If clipboard access is blocked by your browser, you can read and enter the values manually.</p></div>
+<div class="faq-item"><h2>Is AstaSensi official?</h2><p>No. It is an independent fan-made tool and is not affiliated with or endorsed by Garena.</p></div>
+<div class="faq-item"><h2>How can I contact the site?</h2><p>Visit the <a href="contact.html">Contact Us page</a> to email the site owner.</p></div>
+  </main>
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">F<span>+</span></span><span>ASTQA<span class="brand-accent">SENSI</span></span></a>
+    <span>© <span id="copyright-year">2026</span> AstaSensi. All rights reserved.</span>
+    
+  </footer>
+  <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("site-navigation");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", () => {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        nav.classList.toggle("is-open", !isOpen);
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        });
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Contact AstqaSensi with questions, corrections, or feedback.">
+  <title>Contact Us | AstaSensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AstqaSensi home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span>ASTQA<span class="brand-accent">SENSI</span></span>
+    </a>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Generator</a>
+      <a href="about.html">About</a>
+      <a href="how-to-use.html">How to use</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+    <span class="free-pill"><span class="status-dot"></span> 100% FREE TOOL</span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main class="content-page">
+    <p class="page-kicker">ASTASENSI / PLAYER GUIDE</p>
+    <h1>Contact us</h1>
+<p>Have a question, found a problem, or want to suggest a device profile? You can reach the AstaSensi site owner by email.</p>
+<div class="contact-card"><span aria-hidden="true">✉</span><a href="mailto:muqsitijaiya@gmail.com">muqsitijaiya@gmail.com</a></div>
+<h2>What you can contact us about</h2><ul><li>Reporting a bug or a broken page</li><li>Suggesting a phone model to support</li><li>Sharing feedback about the website</li><li>Questions about privacy or site content</li></ul>
+<p>When reporting a sensitivity issue, include your phone model, the game version, and what feels wrong with the settings. Please do not send passwords, verification codes, or other sensitive information.</p>
+<div class="info-callout"><p>We cannot promise a response time, and feedback does not mean a suggested profile has been independently tested.</p></div>
+  </main>
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">F<span>+</span></span><span>ASTQA<span class="brand-accent">SENSI</span></span></a>
+    <span>© <span id="copyright-year">2026</span> AstaSensi. All rights reserved.</span>
+    
+  </footer>
+  <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("site-navigation");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", () => {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        nav.classList.toggle("is-open", !isOpen);
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        });
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

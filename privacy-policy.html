@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="AstqaSensi privacy policy explaining how the static sensitivity tool handles information.">
+  <title>Privacy Policy | AstaSensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AstqaSensi home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span>ASTQA<span class="brand-accent">SENSI</span></span>
+    </a>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Generator</a>
+      <a href="about.html">About</a>
+      <a href="how-to-use.html">How to use</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+    <span class="free-pill"><span class="status-dot"></span> 100% FREE TOOL</span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main class="content-page">
+    <p class="page-kicker">ASTASENSI / PLAYER GUIDE</p>
+    <h1>Privacy policy</h1>
+<p class="updated-note">Last updated: October 21, 2026</p>
+<p>This Privacy Policy explains how AstaSensi handles information when you use the AstaSensi website.</p>
+<h2>Information you enter into the generator</h2><p>The current sensitivity generator runs in your browser. The phone brand, model, performance selection, play style, and swipe preference you enter are used locally to calculate and display suggested values. The site does not currently send these form choices to an AstaSensi server or require an account.</p>
+<h2>Technical information and hosting</h2><p>Like most websites, the hosting provider or infrastructure used to serve this site may automatically process technical information such as IP address, browser type, requested pages, timestamps, and security logs. The exact information retained depends on the hosting provider and its settings.</p>
+<h2>Cookies, analytics, and advertising</h2><p>The current version of AstaSensi does not intentionally set its own analytics or advertising cookies. If analytics, advertising services such as Google AdSense, embedded content, or other third-party services are added later, those providers may use cookies or similar technologies under their own policies. This policy should be updated before or when those services are enabled.</p>
+<h2>External links and third parties</h2><p>The site may link to third-party websites. We do not control their content or privacy practices. Review their policies before sharing personal information with them.</p>
+<h2>Children's privacy</h2><p>The site is a general-purpose gaming tool and is not designed to request personal information from children. Do not send sensitive personal information through email.</p>
+<h2>Your choices</h2><p>You can choose not to use the generator. You can also manage cookies through your browser settings, though disabling certain browser features may affect functionality.</p>
+<h2>Changes to this policy</h2><p>We may update this policy when the website or its services change. The “Last updated” date above will be revised when we make material changes.</p>
+<h2>Contact</h2><p>For privacy questions, email <a href="mailto:{contact_email}">muqsitijaiya@gmail.com</a>.</p>
+<div class="info-callout"><p>This policy describes the current static website design. Review and update it if you add advertising, analytics, forms, accounts, or other data-processing services. It is general information, not legal advice.</p></div>
+  </main>
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">F<span>+</span></span><span>ASTQA<span class="brand-accent">SENSI</span></span></a>
+    <span>© <span id="copyright-year">2026</span> AstaSensi. All rights reserved.</span>
+    
+  </footer>
+  <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("site-navigation");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", () => {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        nav.classList.toggle("is-open", !isOpen);
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        });
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

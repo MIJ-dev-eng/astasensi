@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Learn about AstqaSensi and its free Free Fire sensitivity starter tool.">
+  <title>About Us | AstaSensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AstqaSensi home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span>ASTQA<span class="brand-accent">SENSI</span></span>
+    </a>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Generator</a>
+      <a href="about.html">About</a>
+      <a href="how-to-use.html">How to use</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+    <span class="free-pill"><span class="status-dot"></span> 100% FREE TOOL</span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main class="content-page">
+    <p class="page-kicker">ASTASENSI / PLAYER GUIDE</p>
+    <h1>About AstaSensi</h1>
+<p>AstaSensi is a free, browser-based helper designed to give Free Fire players a practical starting point for tuning their sensitivity settings around their phone and play style.</p>
+<h2>Our goal</h2>
+<p>We want to make it easier for players to begin experimenting with sensitivity without needing to create an account, install an app, or pay for a settings guide. You can enter your device details, choose your preferred play style, and generate a suggested profile when you are ready.</p>
+<h2>How our suggestions work</h2>
+<p>The generator uses a combination of device-related starter profiles and general rules based on the options you select. Not every phone has been individually tested, so results are suggestions—not laboratory measurements, official settings, or a promise of headshots.</p>
+<h2>Independent fan project</h2>
+<p>AstaSensi is an independent fan-made project. It is not affiliated with, endorsed by, or sponsored by Garena or the Free Fire brand owners.</p>
+<div class="info-callout"><p><strong>Our approach:</strong> start with a sensible baseline, test it in Training Mode, and adjust it to your own touch response and comfort.</p></div>
+  </main>
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">F<span>+</span></span><span>ASTQA<span class="brand-accent">SENSI</span></span></a>
+    <span>© <span id="copyright-year">2026</span> AstaSensi. All rights reserved.</span>
+    
+  </footer>
+  <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("site-navigation");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", () => {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        nav.classList.toggle("is-open", !isOpen);
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        });
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

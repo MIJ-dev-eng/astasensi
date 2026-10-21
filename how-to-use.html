@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Step-by-step instructions for using the AstqaSensi Free Fire sensitivity generator.">
+  <title>How to Use | AstaSensi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AstqaSensi home">
+      <span class="brand-mark">F<span>+</span></span>
+      <span>ASTQA<span class="brand-accent">SENSI</span></span>
+    </a>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Generator</a>
+      <a href="about.html">About</a>
+      <a href="how-to-use.html">How to use</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+    <span class="free-pill"><span class="status-dot"></span> 100% FREE TOOL</span>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main class="content-page">
+    <p class="page-kicker">ASTASENSI / PLAYER GUIDE</p>
+    <h1>How to use AstaSensi</h1>
+<p>Follow these steps to generate a sensitivity profile for your device.</p>
+<h2>1. Choose your phone brand</h2><p>Select the brand that made your phone. If you do not see it, choose “Other brand.”</p>
+<h2>2. Enter your exact model</h2><p>Type the model name shown in your phone settings or on the device box. For example, you can enter “Redmi A5.” The model list is only a suggestion list; you can type a model that is not listed.</p>
+<h2>3. Set performance and play style</h2><p>Choose “Estimate for me” if you are unsure about performance. Select the style that best matches how you play: drag headshots, close-range/rush, balanced, or scoped/long-range.</p>
+<h2>4. Choose your swipe length</h2><p>Use short for small controlled movements, medium for a balanced movement, or long for a faster upward drag.</p>
+<h2>5. Generate your profile</h2><p>Press <strong>Generate My Sensitivity</strong>. Your settings will appear only after you submit the form. You can then copy the values or regenerate a profile.</p>
+<h2>6. Test and adjust</h2><ol><li>Open Free Fire and enter Training Mode.</li><li>Test your usual weapons and movement.</li><li>If your aim passes over the target, lower the relevant sensitivity slightly.</li><li>If your aim feels slow, increase it in small steps.</li><li>Change one or two values at a time so you can tell what helped.</li></ol>
+<div class="info-callout"><p>There is no universal sensitivity that guarantees headshots. Screen size, frame rate, touch response, HUD layout, game updates, and personal technique all affect the result.</p></div>
+  </main>
+  <footer>
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">F<span>+</span></span><span>ASTQA<span class="brand-accent">SENSI</span></span></a>
+    <span>© <span id="copyright-year">2026</span> AstaSensi. All rights reserved.</span>
+    
+  </footer>
+  <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("site-navigation");
+      if (!toggle || !nav) return;
+      toggle.addEventListener("click", () => {
+        const isOpen = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Open navigation menu" : "Close navigation menu");
+        nav.classList.toggle("is-open", !isOpen);
+      });
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        });
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation menu");
+          nav.classList.remove("is-open");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
