@@ -1,7 +1,24 @@
-https://astasensi.app/
-https://astasensi.app/about.html
-https://astasensi.app/how-to-use.html
-https://astasensi.app/faq.html
-https://astasensi.app/privacy-policy.html
-https://astasensi.app/contact.html
-https://astasensi.app/disclamer.html
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://astasensi.app/</loc>
+  </url>
+  <url>
+    <loc>https://astasensi.app/about.html</loc>
+  </url>
+  <url>
+    <loc>https://astasensi.app/how-to-use.html</loc>
+  </url>
+  <url>
+    <loc>https://astasensi.app/faq.html</loc>
+  </url>
+  <url>
+    <loc>https://astasensi.app/privacy-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://astasensi.app/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://astasensi.app/disclaimer.html</loc>
+  </url>
+</urlset>
