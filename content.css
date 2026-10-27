@@ -1,0 +1,96 @@
+/* AstaSensi added guide content — append-only styles.
+   This file supplements style.css without replacing its existing rules. */
+.guide-section {
+  max-width: 920px;
+  margin: 30px auto 0;
+  padding: clamp(22px, 4vw, 34px);
+  color: var(--text, #f7f7fa);
+  background: linear-gradient(145deg, rgba(23,23,31,.96), rgba(15,15,21,.96));
+  border: 1px solid var(--line, #2b2b34);
+  border-radius: var(--radius, 20px);
+}
+.guide-section > .section-kicker { margin-bottom: 8px; }
+.guide-section h2 {
+  margin: 8px 0 14px;
+  font-size: clamp(23px, 4vw, 31px);
+  line-height: 1.2;
+  letter-spacing: -.55px;
+}
+.guide-section h3 {
+  margin: 24px 0 7px;
+  font-size: clamp(16px, 2.5vw, 19px);
+  line-height: 1.35;
+}
+.guide-section p,
+.guide-section li {
+  color: var(--muted, #a2a2af);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.guide-section p { margin: 10px 0; }
+.guide-section strong { color: var(--text, #f7f7fa); }
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.guide-card {
+  min-width: 0;
+  padding: 17px;
+  background: var(--panel-2, #19191f);
+  border: 1px solid var(--line, #2b2b34);
+  border-radius: 13px;
+}
+.guide-card h3 { margin: 0 0 7px; }
+.guide-card p { margin: 0; }
+.guide-card .guide-time {
+  margin: 0 0 6px;
+  color: var(--red, #ff3b46);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.guide-steps,
+.guide-list { padding-left: 23px; }
+.guide-steps li,
+.guide-list li { padding-left: 4px; margin: 0 0 10px; }
+.guide-note {
+  margin-top: 20px !important;
+  padding: 13px 15px;
+  border-left: 3px solid var(--red, #ff3b46);
+  border-radius: 0 9px 9px 0;
+  background: rgba(255,59,70,.06);
+}
+.guide-problem {
+  margin-top: 15px;
+  padding: 3px 0 13px 15px;
+  border-left: 2px solid var(--line, #2b2b34);
+}
+.guide-problem h3 { margin-top: 10px; }
+.guide-problem p { margin-bottom: 0; }
+.guide-faq {
+  margin-top: 10px;
+  padding: 15px 16px;
+  background: var(--panel-2, #19191f);
+  border: 1px solid var(--line, #2b2b34);
+  border-radius: 11px;
+}
+.guide-faq summary {
+  color: var(--text, #f7f7fa);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.guide-faq summary::marker { color: var(--red, #ff3b46); }
+.guide-faq p { margin: 12px 0 0; }
+.guide-faq[open] { border-color: rgba(255,59,70,.5); }
+@media (max-width: 640px) {
+  .guide-section { margin-top: 18px; padding: 20px 17px; }
+  .guide-grid { grid-template-columns: 1fr; gap: 10px; }
+  .guide-section p,
+  .guide-section li { font-size: 13px; line-height: 1.75; }
+  .guide-card { padding: 15px; }
+}
